@@ -179,7 +179,7 @@ This is quite useful as it increases system parallelism in important ways ({{rus
 ### Application order
 
 When combining the effects of multiple commands, it can be important to be aware of the exact order in which your commands are executed can be vitally important.
-If one system is spawning an entity and then passing off its {rust_type(type="trait" crate="bevy_ecs" mod = "entity" name="Entity" no_mod = "true")}}` identifier to another system, that needs to occur before the second system attempts to add components to it!
+If one system is spawning an entity and then passing off its{{rust_type(type="trait" crate="bevy_ecs" mod = "entity" name="Entity" no_mod = "true")}}` identifier to another system, that needs to occur before the second system attempts to add components to it!
 
 Thankfully, while their effect is delayed, their application order follows a few simple rules:
 
